@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            height: 65px;
+            background-color: black;
+            color: white;
+        }
+
+        nav ul li {
+            padding: 0 12px;
+        }
+
+        .brand img {
+            width: 44px;
+            padding: 0 8px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+        
+        .container {
+            min-height: 72vh;
+            background-color: black;
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            display: flex;
+            margin: 23px auto;
+            width: 70%;
+            border-radius: 12px;
+            padding: 34px;
+            /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDL-ma4kqu2S-knKLYucmEnvA4-w9SH9qKw&usqp=CAU'); */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5IeHXL0SlWKYW_DygNLBqXTP6RzmtAL_KQ&usqp=CAU');
+            background-size:100%;
+        }       
+
+        .bottom {
+            position: sticky;
+            bottom: 0;
+            height: 130px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .icons {
+            margin-top: 14px;
+        }
+
+        .icons i {
+            cursor: pointer;
+        }
+
+        #myProgressBar {
+            width: 80vw;
+            cursor: pointer;
+        }
+
+        .songItemContainer {
+            margin-top: 74px;
+        }
+
+        .songItem {
+            height: 50px;
+            display: flex;
+            background-color: white;
+
+            color: black;
+            margin: 12px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 34px;
+        }
+
+        .songItem img {
+            width: 43px;
+            margin: 0 23px;
+            border-radius: 34px;
+            
+        }
+
+        .timestamp {
+            margin: 0 23px;
+        }
+
+        .timestamp i {
+            cursor: pointer;
+        }
+
+        .songInfo {
+            position: absolute;
+            left: 10vw;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .songInfo img {
+            opacity: 0;
+            transition: opacity 0.4s ease-in;
+        }
+/* 
+        @media only screen and (max-width: 1100px) {
+            body {
+                background-color: red;
+            }
+        } */
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://th.bing.com/th/id/OIP.GAA-GnYUOds9pboxAPO61AHaFj?w=207&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+            
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Telugu songs</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="https://i.ytimg.com/vi/AXSm49NGkg8/maxresdefault.jpg">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=AXSm49NGkg8'">Mastaaru - Mastaaru</span>
+                    <span class="songlistplay"><span class="timestamp">03:16<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkH-sJJp7aix2Vgt--T7JeovJfxeNPuf8Cvw&usqp=CAU">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=dOKQeqGNJwY'">Inthandham </span>
+                    <span class="songlistplay"><span class="timestamp">4:02<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsyJar6nljOktXFK_nh1XkY_44yHHypZhcg&usqp=CAU">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=m2kU2b9PYcs'">Sirivennela</span>
+                    <span class="songlistplay"><span class="timestamp">3:58<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-PjhdPsAmg3n8GNSCLSkqwF25io26nfq4tf0HPYLat02R7Y_NlnkB4-oFJItfeXwl_cU&usqp=CAU">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=t_aO4EMP-i0'">Gundellonaa</span>
+                    <span class="songlistplay"><span class="timestamp">4:00<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5HvCDJjHEC2cMejhaQvHj0ldj5xPUJRXw4g&usqp=CAU">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=2mDCVzruYzQ'">Butta Bomma</span>
+                    <span class="songlistplay"><span class="timestamp">3:13<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+
+</html>

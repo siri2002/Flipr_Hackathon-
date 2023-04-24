@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            height: 65px;
+            background-color: black;
+            color: white;
+        }
+
+        nav ul li {
+            padding: 0 12px;
+        }
+
+        .brand img {
+            width: 44px;
+            padding: 0 8px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+        
+        .container {
+            min-height: 72vh;
+            background-color: black;
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            display: flex;
+            margin: 23px auto;
+            width: 70%;
+            border-radius: 12px;
+            padding: 34px;
+            /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDL-ma4kqu2S-knKLYucmEnvA4-w9SH9qKw&usqp=CAU'); */
+            background-image: url('https://t4.ftcdn.net/jpg/05/15/77/39/360_F_515773972_IH759yGiOyAdQLtr2qdpMh71QVNely9C.jpg');
+            background-size:100%;
+        }       
+
+        .bottom {
+            position: sticky;
+            bottom: 0;
+            height: 130px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .icons {
+            margin-top: 14px;
+        }
+
+        .icons i {
+            cursor: pointer;
+        }
+
+        #myProgressBar {
+            width: 80vw;
+            cursor: pointer;
+        }
+
+        .songItemContainer {
+            margin-top: 74px;
+        }
+
+        .songItem {
+            height: 50px;
+            display: flex;
+            background-color: white;
+
+            color: black;
+            margin: 12px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 34px;
+        }
+
+        .songItem img {
+            width: 43px;
+            margin: 0 23px;
+            border-radius: 34px;
+            
+        }
+
+        .timestamp {
+            margin: 0 23px;
+        }
+
+        .timestamp i {
+            cursor: pointer;
+        }
+
+        .songInfo {
+            position: absolute;
+            left: 10vw;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .songInfo img {
+            opacity: 0;
+            transition: opacity 0.4s ease-in;
+        }
+/* 
+        @media only screen and (max-width: 1100px) {
+            body {
+                background-color: red;
+            }
+        } */
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://th.bing.com/th/id/OIP.GAA-GnYUOds9pboxAPO61AHaFj?w=207&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+            
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Happy Vibes</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/75/What_Makes_You_Beautiful_Album_Cover.jpg">
+                    
+                   <span onclick="window.location='https://youtu.be/Qcj7C2hOzYE'">One Direction - What Makes You Beautiful </span>
+                    <span class="songlistplay"><span class="timestamp">03:28<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQycTv4gX_hjuPSiVuc3rtm4T6G26pW-4mr3w&usqp=CAU">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=mNEUkkoUoIA'">OneRepublic - I Ain’t Worried (From “Top Gun: Maverick”)</span>
+                    <span class="songlistplay"><span class="timestamp">2:34<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG4429BD1WCpmZFSdZpE9WxK6xbW24Q4F67w&usqp=CAU">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=ow1QqW0jzTo'">Shawn Mendes, Camila Cabello - Señorita</span>
+                    <span class="songlistplay"><span class="timestamp">3:11<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://i.ytimg.com/vi/RCf3sx8f9Vs/maxresdefault.jpg">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=6nxDZW3bTOI'">Imagine Dragons - Believer</span>
+                    <span class="songlistplay"><span class="timestamp">3:25<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFn-qL5JBQY6IILA6WgqNBSRX2K526BRJ-bw&usqp=CAU">
+                    
+                   <span onclick="window.location='https://www.youtube.com/watch?v=kffacxfA7G4'">Justin Bieber - Baby ft. Ludacris</span>
+                    <span class="songlistplay"><span class="timestamp">3:13<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+
+</html>
